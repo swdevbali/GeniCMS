@@ -1,0 +1,3 @@
+<?
+echo "Start of GeniCMS";
+?>
