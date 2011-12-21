@@ -1,28 +1,28 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Start extends CI_Controller {
-  
-  /**
-   * Index Page for this controller.
-   *
-   * Maps to the following URL
-   * 		http://example.com/index.php/welcome
-   *	- or -  
-   * 		http://example.com/index.php/welcome/index
-   *	- or -
-   * Since this controller is set as the default controller in 
-   * config/routes.php, it's displayed at http://example.com/
-   *
-   * So any other public methods not prefixed with an underscore will
-   * map to /index.php/welcome/<method_name>
-   * @see http://codeigniter.com/user_guide/general/urls.html
-   */
-  public function index()
-  {
-    $this->load->database();
-    $this->load->view('start/index');
-  }
+	
+	function __construct()
+	{
+		parent::__construct();
+		$this->load->model('StartModel','',TRUE);
+		$this->load->model('PageModel','',TRUE);
+	}
+		
+	public function index()
+	{
+		$layout = $this->StartModel->getLayout();
+		$this->page($layout->firstpage);
+	}
+	public function page($page)
+	{
+		
+		$layout = $this->StartModel->getLayout();
+		$data['top_nav']=$this->StartModel->getTopNav();
+		$data['layout']=$layout;
+		$data['page']=$this->PageModel->getPage($page);
+		$this->session->set_userdata('active_page',$page);// I think I am gonna need what is the current active page
+		$this->load->vars($data);
+		$this->load->view('start/index');
+	}
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
