@@ -42,7 +42,13 @@ function clearText(field)
     <div id="templatemo_menu">
             <ul>
 			<? foreach($top_nav as $nav):?>
-                <li><a href="<?=base_url()?>index.php/start/page/<?=$nav->linkto?>" <? if(strtolower($this->session->userdata('active_page'))==strtolower($nav->title)) { ?> class="current" <? } ?>><?=$nav->title;?></a></li>
+                <li>
+				<? if($nav->type=='Page'){ ?>
+				<a href="<?=base_url()?>index.php/start/page/<?=$nav->linkto?>" <? if(strtolower($this->session->userdata('active_page'))==strtolower($nav->title)) { ?> class="current" <? } ?>><?=$nav->title;?></a>
+				<? }else if($nav->type=='Url'){ ?>
+				<a target="_blank" href="<?=$nav->linkto?>" <? if(strtolower($this->session->userdata('active_page'))==strtolower($nav->title)) { ?> class="current" <? } ?>><?=$nav->title;?></a>				
+				<? } ?>
+				</li>
 			<? endforeach;?>
             </ul>    	
     	</div> <!-- end of templatemo_menu -->
