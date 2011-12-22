@@ -7,6 +7,7 @@
 		
 		function getTopNav()
 		{
+			$this->db->order_by('ordernum');
 			$query = $this->db->get("top_nav");
 			return $query->result();			
 		}
