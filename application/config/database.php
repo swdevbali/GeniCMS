@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = '127.0.0.1';
-$db['default']['username'] = 'root';
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'wskoicen_root';
 $db['default']['password'] = '';
-$db['default']['database'] = 'genicms';
+$db['default']['database'] = 'wskoicen_csm';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

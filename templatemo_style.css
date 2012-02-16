@@ -309,8 +309,8 @@ h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 /* end of sidebar */
 
 #templatemo_content {
-	width: 620px;
-	float: right;
+	width: 870px;/*620*/
+	float: right;/*right*/
 	padding: 30px;
 }
 
@@ -318,7 +318,7 @@ h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 
 #templatemo_slider {
 	clear: both;
-	width: 600px;
+	width: 800px;/*600px*/
 	height: 240px;
 	margin-bottom: 60px;
 	border: 10px solid #fff;	
