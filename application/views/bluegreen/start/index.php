@@ -3,10 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?=$layout->title?></title>
-<meta name="keywords" content="free website templates, pro teal, web design, 2-column" />
-<meta name="description" content="Pro Teal - free website template (2-column layout) from templatemo.com" />
 <link href="<?=base_url()?>templatemo_style.css" rel="stylesheet" type="text/css" />
 <link href="<?=base_url()?>css/jquery.ennui.contentslider.css" rel="stylesheet" type="text/css" media="screen,projection" />
+<link type="text/css" href="<?=base_url()?>res/css/thickbox.css" rel="stylesheet"/>
+<script src="<?=base_url()?>res/js/jquery.js" type="text/javascript"></script>
+<script src="<?=base_url()?>res/js/thickbox.js" type="text/javascript"></script>
 <script type="text/javascript">
 	function changeTheme()
 	{

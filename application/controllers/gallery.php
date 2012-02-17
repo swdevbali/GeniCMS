@@ -18,12 +18,17 @@ class Gallery extends CI_Controller {
 		$data['layout']=$layout;
 		
 		$data['cboTheme']=$this->StartModel->getListOfThemes();
-		$data['content']='<p align="center"><img src="'.base_url().'upload_img/under.png"/></p>';
+		$data['content']=$this->load->view('gallery\gallery','',true);
 		$data['title']='Gallery';
 		$this->session->set_userdata('active_page',$page);// I think I am gonna need what is the current active page
 		$this->load->vars($data);
 		$viewPath = $layout->theme.'/start/index';
 		$this->load->view($viewPath);
+	}
+	
+	function openUploadForm()
+	{
+		$this->load->view('gallery\upload_form');
 	}
 	
 }

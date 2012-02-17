@@ -1,4 +1,8 @@
 <head>
+<link type="text/css" href="<?=base_url()?>res/css/thickbox.css" rel="stylesheet"/>
+<script src="<?=base_url()?>res/js/jquery.js" type="text/javascript"></script>
+<script src="<?=base_url()?>res/js/thickbox.js" type="text/javascript"></script>
+
 <script type="text/javascript">
 	function changeTheme()
 	{
