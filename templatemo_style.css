@@ -9,8 +9,8 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:13px;
 	line-height:1.5em; 
-	background-color:#038e86;
-	background-image: url(images/templatemo_body.jpg);
+	background-color:#ffffff;
+	/*background-image: url(images/templatemo_body.jpg);*/
 	background-position:top;
 	background-repeat:repeat-x;
 }
@@ -88,20 +88,21 @@ h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 
 #templatemo_header  #site_title {
 	float: left;
-	width: 300px;
+	width: 600px;
 	padding: 10px 0 0 0;
 }
 
 #templatemo_header  #site_title h1 {
 	margin: 0;
 	padding: 0;
+	
 }
 
 #templatemo_header  #site_title h1 a {
 	margin: 0px;
 	padding: 0px;
 	font-size: 30px;
-	color: #ffffff;
+	
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -110,7 +111,7 @@ h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 	display: block;
 	text-align: right;
 	font-size: 14px;
-	color: #CCC;
+	color: #000000;
 	font-weight: bold;
 	letter-spacing: 2px;
 }
@@ -188,6 +189,8 @@ h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 	color: #fff;	
 	font-weight: bold;
 	outline: none;
+	background: url(images/templatemo_button.png);
+
 }
 
 #templatemo_menu li a:hover, #templatemo_menu li .current {
@@ -202,7 +205,7 @@ h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 	position: relative;
 	width: 980px;
 	margin: 40px 0;
-	background: url(images/templatemo_content_middle.png) repeat-y center;
+	/*background: url(images/templatemo_content_middle.png) repeat-y center;*/
 }
 
 #templatemo_content_wrapper .top {
@@ -211,7 +214,7 @@ h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 	left: 0;
 	width: 980px;
 	height: 20px;
-	background: url(images/templatemo_content_top.png) no-repeat; 
+	/*background: url(images/templatemo_content_top.png) no-repeat; */
 }
 
 #templatemo_content_wrapper .bottom {
@@ -220,7 +223,7 @@ h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 	left: 0;
 	width: 980px;
 	height: 20px;
-	background: url(images/templatemo_content_bottom.png) no-repeat; 
+	/*background: url(images/templatemo_content_bottom.png) no-repeat; */
 }
 
 /* sidebar */
@@ -322,7 +325,7 @@ h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 	height: 240px;
 	margin-bottom: 60px;
 	border: 10px solid #fff;	
-	background: #e9f1f1;
+	/*background: #e9f1f1;*/
 }
 
 /* end of slider */

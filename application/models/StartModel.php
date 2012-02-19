@@ -74,7 +74,14 @@
 			$result->free_result();
 			return $row_data;
 		}
-
+		
+		function getGallery($idgallery)
+		{
+			$this->db->select('*');
+			$this->db->where('idgallery',$idgallery);
+			$result = $this->db->get('gallery');
+			return $result->row();
+		}
 	
 	}
 	

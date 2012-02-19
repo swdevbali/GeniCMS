@@ -25,7 +25,7 @@ function clearText(field)
 </script>
 </head>
 <body>
-<div style="background:#009900">
+<div style="background:#009900;visibility:hidden">
 Change theme : <?=form_dropdown('cboTheme',$cboTheme,$layout->theme, 'id="cboTheme" onChange="changeTheme();"')?>
 </div>
 <div id="templatemo_wrapper">
@@ -38,13 +38,6 @@ Change theme : <?=form_dropdown('cboTheme',$cboTheme,$layout->theme, 'id="cboThe
                 <span>Jl. Imogiri Timur KM 10, Ketonggo, Wonokromo </span>
             </a></h1>
       	</div>
-        
-        <div id="search_box">
-            <form action="#" method="get">
-                <input type="text" value="Ketik kata kunci pencarian.." name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
-                <input type="submit" name="Search" value="Search" alt="Search" id="searchbutton" title="Search" />
-            </form>
-        </div>
         
         <div class="cleaner"></div>
 	</div> <!-- end of header -->

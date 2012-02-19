@@ -79,4 +79,11 @@ class Gallery extends CI_Controller {
 		redirect('gallery');
 	}
 	
+	public function pop($idgallery)
+	{
+		$gallery = $this->StartModel->getGallery($idgallery);
+		$data['gallery']=$gallery;
+		$this->load->view('gallery\pop',$data);
+		
+	}
 }
