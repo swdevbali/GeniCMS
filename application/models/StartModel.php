@@ -38,5 +38,44 @@
 			$data = array("theme"=>$theme);
 			$this->db->update('layout',$data);
 		}
+		
+		function getGalleryCatList()
+		{
+			$this->db->select('idgallery_cat as id, category as title');
+			$this->db->order_by('category');
+			$result = $this->db->get('gallery_cat');
+			
+			$row_data=array();
+			foreach($result->result_array() as $row)
+			{
+			  $row_data[$row['id']]=$row['title'];
+			}
+			return $row_data;
+		}
+		
+		function saveGallery($data)
+		{
+			if(!isset($data['idgallery']))
+			{
+				$this->db->insert('gallery',$data);
+			}else
+			{
+				$this->db->where('idgallery',$data['idgallery']);
+				$this->db->update('gallery',$data);
+			}	
+		}
+
+		function getGalleryList()
+		{
+			$this->db->select('*');
+			$this->db->order_by('title');
+			$result = $this->db->get('gallery');
+			$row_data = $result->result();
+			$result->free_result();
+			return $row_data;
+		}
+
+	
 	}
-?>
+	
+	?>
