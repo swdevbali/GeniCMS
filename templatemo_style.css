@@ -83,7 +83,8 @@ h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 	height: 90px;
 	padding: 0 30px;
 	margin: 0 0 20px 0;
-	background: url(images/templatemo_header_bg.png)
+	color:	#000000;
+	/*background: url(images/templatemo_header_bg.png)*/
 }
 
 #templatemo_header  #site_title {
@@ -161,21 +162,28 @@ h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 	clear: both;
 	height: 24px;
 	margin-bottom: 20px;
+	 padding: 10px;
 }
 
 #templatemo_menu ul {
 	margin: 0;
 	padding: 0 0 0 30px;
 	list-style: none;
+	text-align: center;
 }
 
 #templatemo_menu ul li {
 	padding: 0px;
 	margin: 0px;
 	display: inline;
+	text-align:center;
 }
 
+#templatemo_menu ul a {
+	text-align: center;
+}
 #templatemo_menu ul li a {
+text-align:center;
 	position: relative;
 	float: left;
 	width: 100px;

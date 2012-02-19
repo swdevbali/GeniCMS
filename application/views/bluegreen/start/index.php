@@ -23,6 +23,19 @@ function clearText(field)
     else if (field.value == '') field.value = field.defaultValue;
 }
 </script>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 45px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+-->
+</style>
 </head>
 <body>
 <div style="background:#009900;visibility:hidden">
@@ -32,18 +45,19 @@ Change theme : <?=form_dropdown('cboTheme',$cboTheme,$layout->theme, 'id="cboThe
 
 	<div id="templatemo_header">
     
-    	<div id="site_title">
+    	<!--<div id="site_title">
             <h1><a href="<?=base_url()?>" target="_parent">
-                <img src="<?=base_url()?>images/templatemo_logo.png" alt="WS Koi Center" />
-                <span>Jl. Imogiri Timur KM 10, Ketonggo, Wonokromo </span>
-            </a></h1>
-      	</div>
-        
-        <div class="cleaner"></div>
+                <!--<img src="<?=base_url()?>images/templatemo_logo.png" alt="WS Koi Center" />-->
+				<p align="center" class="style1">WS KOI CENTER </p>
+                <div align="center"><span class="style2">Jl. Imogiri Timur KM 10, Ketonggo, Wonokromo</span>
+                       <!-- </a></h1>
+      	</div>-->
+                        </div>
+                <div class="cleaner"></div>
 	</div> <!-- end of header -->
     
     
-    <div id="templatemo_menu">
+    <div id="templatemo_menu" align="center">
             <ul>
 			<? foreach($top_nav as $nav):?>
                 <li>
