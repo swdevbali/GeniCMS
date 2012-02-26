@@ -21,7 +21,7 @@ class Gallery extends CI_Controller {
 		$data['galleryList']=$this->StartModel->getGalleryList();
 		$this->load->vars($data);
 		$data['content']=$this->load->view('gallery/gallery','',true);
-		$data['title']='Gallery';
+		$data['title']='Galeri Foto dan Video';
 		$this->load->vars($data);
 		$this->session->set_userdata('active_page',$page);// I think I am gonna need what is the current active page
 		$viewPath = $layout->theme.'/start/index';
@@ -83,7 +83,7 @@ class Gallery extends CI_Controller {
 	{
 		$gallery = $this->StartModel->getGallery($idgallery);
 		$data['gallery']=$gallery;
-		$this->load->view('gallery\pop',$data);
+		$this->load->view('galler/pop',$data);
 		
 	}
 }
